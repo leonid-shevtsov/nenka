@@ -1,0 +1,7 @@
+[Interface]
+Address = <%=node[:ipv4_wg_address] %>, <%=node[:ipv6_wg_address] %>
+SaveConfig = false
+ListenPort = <%=node[:wg_port] %>
+PrivateKey = <%=node[:wg_server_private_key] %>
+
+<%= ::File.read('wireguard/wg0-peers.conf') %>

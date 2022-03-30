@@ -1,0 +1,10 @@
+{
+  "host": "domain or ip of wireguard server",
+  "ssh_port": 2222,
+  "wg_port": 443,
+  "network_interface": "enp1s0",
+  "ipv4_network": "random subnet of 10.0.0.0/8",
+  "ipv6_network": "random subnet of fd00:::::/16",
+  "wg_server_private_key": "generate with wg",
+  "wg_server_public_key": "corresponding private key"
+}

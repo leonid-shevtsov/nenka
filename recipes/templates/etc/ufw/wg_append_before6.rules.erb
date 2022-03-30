@@ -1,0 +1,6 @@
+
+# Allow forwarding from WireGuard
+*nat
+:POSTROUTING ACCEPT [0:0]
+-A POSTROUTING -s <%=node[:ipv6_network] %> -o <%=node[:network_interface] %> -j MASQUERADE
+COMMIT
